@@ -7,9 +7,14 @@ class MenuItem(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='Цена', default=0)
 
     TYPE = [
-        ('BRK', 'Завтрак'),
-        ('LUN', 'Обед'),
-        ('DIN', 'Ужин'),
+        ('CHS', 'Горячие и холодные закуски'),
+        ('SLD', 'Салаты'),
+        ('SPS', 'Супы'),
+        ('SDS', 'Гарниры'),
+        ('HOT', 'Горячее'),
+        ('SUS', 'Соусы'),
+        ('DST', 'Десерты'),
+        ('AHL', 'Алкоголь'),
     ]
 
-    type = models.CharField(choices=TYPE, max_length=3, default='BRK', verbose_name='Тип')
+    type = models.CharField(choices=TYPE, max_length=3, default='HOT', verbose_name='Тип')
