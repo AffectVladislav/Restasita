@@ -125,12 +125,27 @@ body {
 }
 
 .header-suptitel:before {
-    position: absolute;
+    background-color: #C4C4C4;
     content: '';
+    position: absolute;
+
     height: 2px;
     width: 61px;
-    background-color: #C4C4C4;
     margin-top: 12px;   
+
     top: 160px;
     left: 340px;
+}
+
+.header-view-menu {
+    text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FF7400;
+    color: #fff;
+
+    font-size: 14px;
+    padding: 14px 28px;
+    border-radius: 14px;
+
+    transition: background-color 0.15s linear;
 }
