@@ -6,68 +6,73 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
     {% block title %}<title>Ресторан</title>{% endblock %}
 </head>
 <body>
-    
-    <div class="header">
-        <div class="container">
-            <div class="header-line">
-                <div class="header-logo">
-                    <img src="{% static 'img/logo.png' %}" alt="">
-                </div>
 
-                <div class="nav">
+<div class="header">
+    <div class="container">
+        <div class="header-line">
+            <div class="header-logo">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+
+            <div class="nav">
                 <a class="naw-item" href="@">ГЛАВНАЯ</a>
                 <a class="naw-item" href="@">МЕНЮ</a>
                 <a class="naw-item" href="@">О НАС</a>
                 <a class="naw-item" href="@">БРОНЬ</a>
-                </div>
+            </div>
 
-                <div class="cart">
-                    <a href="@"></a>
-                        <img class="cart-img" src='{% static "img/cart.png" %}'>
-                </div>
+            <div class="cart">
+                <a href="#"></a>
+                <img class="cart-img" src='{% static "img/cart.png" %}'>
+            </div>
 
-                <div class="phone">
-                    <div class="phone-holder">
-                        <div class="phone-img">
-                            <img src='{% static "img/phone.png" %}'>
-                        </div>
-                        <div class="number">
-                            <a class="num" href="@">+7-888-888-88-88</a>
-                        </div>
+            <div class="phone">
+                <div class="phone-holder">
+                    <div class="phone-img">
+                        <img src='{% static "img/phone.png" %}'>
                     </div>
-                    <div class="phone-text">
-                        Свяжитесь с нами для <br> бронирования
+                    <div class="number">
+                        <a class="num" href="#">+7-888-888-88-88</a>
                     </div>
                 </div>
-                <div class="btn">
-                    <a class ="button" href="@">ЗАКАЗ СТОЛИКА</a>
+                <div class="phone-text">
+                    Свяжитесь с нами для <br> бронирования
                 </div>
-            </div>    
-            <div class="header-down">
+            </div>
+            <div class="btn">
+                <a class="button" href="#">ЗАКАЗ СТОЛИКА</a>
+            </div>
+        </div>
+        <div class="header-down">
 
-                <div class="header-titel">
-                    Добро пожаловать в
+            <div class="header-titel">
+                Добро пожаловать в
 
-                    <div class="header-subtitel">
-                        Наш ресторан
-                    </div>
+                <div class="header-subtitel">
+                    Наш ресторан
+                </div>
 
-                    <div class="header-suptitel">
-                        ДОМ ЛУЧШЕЙ ЕДЫ
-                    </div>
-                    
+                <div class="header-suptitel">
+                    ДОМ ЛУЧШЕЙ ЕДЫ
+                </div>
+
+                <div class="header-btn">
+                    <a class="header-view-menu" href="#">Показать меню</a>
                 </div>
 
             </div>
+
         </div>
     </div>
+</div>
 
 </body>
 </html>
